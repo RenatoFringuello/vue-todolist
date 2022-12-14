@@ -3,7 +3,7 @@ const {createApp} = Vue;
 createApp({
     data(){
         return{
-            thingToAdd : '.', 
+            thingToAdd : '', 
             toDoList : [
                 {text:'dnkejrvndjlsnevr', done:true},
                 {text:'dnkejrvndjlsnevr', done:true},
