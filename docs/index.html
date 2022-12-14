@@ -34,14 +34,13 @@
 
         <div class="display-3 border-bottom border-dark lh-1 mt-5 text-center">To Do list</div>
         <ul class="list-unstyled mb-0">
-            <li v-for="thingToDo,i in toDoList" class="list-element d-flex text-break fs-2 border-bottom border-dark lh-1 pt-2">
+            <li v-for="thingToDo,i in toDoList" class="list-element d-flex text-break fs-2 border-bottom border-dark lh-1 pt-3 pt-md-2">
                 <span @click="toggleStrikeOff(i)" class="flex-grow-1" :class="thingToDo.done ? 'strike-off' : ''">{{i+1}}) {{ thingToDo.text }}</span>
                 <i class="fa-solid fa-xmark text-danger align-self-center px-2" @click="removeItemInList(i)"></i>
             </li>
         </ul>
         <div class="d-flex justify-content-between mb-3 bg-paper">
             <input @keyUp.Enter="addItemInList()" class="list-element reset-input text-break w-100 fs-4 border-bottom border-dark lh-1" v-model.trim="thingToAdd" type="text" name="item-to-add" id="item-to-add" placeholder="Type something to add ...">
-            <button class="btn btn-success" @click="addItemInList()">Aggiungi</button>
         </div>
     </main>
 </body>
