@@ -1,0 +1,45 @@
+body{
+    height: 100vh;
+    height: -webkit-fill-available;
+}
+.side-line{
+    width: 80px;
+    height: calc(100% -60px);
+    top:60px;
+    border-right: 2px solid;
+    border-color: #ee5858;
+}
+.head{
+    background-color: #270c00 !important;
+    height: 60px;
+    
+}
+
+.bg-paper{
+    background-color: #fff2e2 !important;
+}
+/* fonts */
+.indie-flower{
+    font-family: 'Indie Flower', cursive;
+}
+.la-belle-aurore{
+    font-family: 'La Belle Aurore', cursive;
+}
+.fs-small{
+    font-size: small !important;
+}
+/* text */
+.reset-input{
+    border: 0;
+    background-color: #0000;
+}
+.list-element{
+    padding-left: 90px;
+    padding-right: 10px;
+}
+.strike-off{
+    text-decoration-line: line-through;
+    text-decoration-thickness: 3px;
+    text-decoration-color: red;
+    -moz-text-decoration-color: red;
+}
